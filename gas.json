@@ -1,0 +1,29 @@
+{
+  "version": "2026-10-16",
+  "rule": "One human. Three doors. Do not start a fourth. Edit the door that already owns the work.",
+  "conductor": "Moon",
+  "doors": [
+    {
+      "id": "helix",
+      "owns": "Public backplane. The contract. Not a product.",
+      "open": "https://helix-panel-gamma.vercel.app/",
+      "edit": "https://github.com/dkim31262-cmyk/helix-panel",
+      "not": ["Lunar Spark", "Lunar Strike OS"]
+    },
+    {
+      "id": "lunar-spark",
+      "owns": "Quiet living lab. Not a clinic. Compass stays on WebsitePublisher.",
+      "open": "https://project25706.websitepublisher.ai/lunar-spark.html",
+      "edit": "https://github.com/dkim31262-cmyk/lunar-spark",
+      "not": ["Helix contract", "Lunar Strike OS"]
+    },
+    {
+      "id": "lunar-strike-os",
+      "owns": "Art book and FLASH. Understand, Stand, Strike. The human authors the sentence.",
+      "open": "https://lunar-strike-os.vercel.app/",
+      "edit": "https://github.com/dkim31262-cmyk/lunar-strike-os",
+      "not": ["Lunar Spark", "Helix", "a Grok preview"]
+    }
+  ],
+  "not_a_door": "*.grok.me is a Grok preview. Other models often cannot open it. Do not QC it as the public site."
+}

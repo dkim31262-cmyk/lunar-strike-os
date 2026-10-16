@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lunar Strike OS</title>
+    <meta
+      name="description"
+      content="Public door. Lunar Strike OS. Understand, Stand, Strike. No account. Not Lunar Spark. Not Helix."
+    />
+    <link rel="canonical" href="https://lunar-strike-os.vercel.app/" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #050506;
+        --fg: #f2f1ee;
+        --muted: #8a8a84;
+        --line: rgb(242 241 238 / 0.14);
+        --elev: #141416;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: var(--bg); color: var(--fg); }
+      body {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        min-height: 100dvh;
+      }
+      a { color: inherit; }
+      button, a { -webkit-tap-highlight-color: transparent; }
+      .wrap { width: min(68rem, calc(100% - 2rem)); margin: 0 auto; }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.4rem 1rem;
+        align-items: center;
+        padding: 1.1rem 0;
+      }
+      .mark {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 1px solid var(--fg);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 0.55rem;
+        letter-spacing: 0.08em;
+      }
+      .brand, .nav a, .kicker, .law {
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+      nav { display: flex; gap: 0.9rem; }
+      nav a { color: var(--muted); text-decoration: none; min-height: 2.75rem; display: flex; align-items: center; }
+      .hero {
+        min-height: calc(100dvh - 4.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 2rem 0 4rem;
+        position: relative;
+      }
+      .beam {
+        position: absolute;
+        left: 18%;
+        top: 0;
+        bottom: 12%;
+        width: 1px;
+        background: linear-gradient(to bottom, transparent, #fff, transparent);
+        opacity: 0.7;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: clamp(2.6rem, 8vw, 5.2rem);
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+        margin: 0.8rem 0 0;
+        max-width: 12ch;
+      }
+      .thai { color: var(--muted); margin: 0.8rem 0 0; }
+      .row { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.6rem; }
+      .btn, .ghost {
+        min-height: 2.75rem;
+        border-radius: 999px;
+        padding: 0 1.3rem;
+        font: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+      }
+      .btn { background: var(--fg); color: var(--bg); border: 0; }
+      .ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+      .btn:disabled { opacity: 0.4; cursor: default; }
+      section { border-top: 1px solid var(--line); padding: 4rem 0; }
+      h2 { font-weight: 400; font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.03em; margin: 0.4rem 0 0; }
+      .grid { display: grid; gap: 1px; background: var(--line); margin-top: 2rem; }
+      @media (min-width: 800px) { .grid.three { grid-template-columns: 1fr 1fr 1fr; } .grid.doors { grid-template-columns: 1fr 1fr 1fr; } }
+      article { background: var(--bg); padding: 1.4rem 1.2rem 1.6rem; }
+      article p { color: var(--muted); }
+      .flash {
+        min-height: 22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 36rem;
+      }
+      .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 1.2rem; }
+      .choice {
+        min-height: 3rem;
+        text-align: left;
+        background: var(--elev);
+        color: var(--fg);
+        border: 0;
+        border-radius: 8px;
+        padding: 0.7rem 0.9rem;
+        font: inherit;
+        cursor: pointer;
+      }
+      .choice.on { background: var(--fg); color: var(--bg); }
+      textarea {
+        width: 100%;
+        margin-top: 0.7rem;
+        min-height: 7rem;
+        resize: vertical;
+        background: var(--elev);
+        color: var(--fg);
+        border: 0;
+        border-radius: 8px;
+        padding: 0.9rem 1rem;
+        font: inherit;
+        font-size: 1.05rem;
+      }
+      blockquote { margin: 1.2rem 0 0; padding-left: 1rem; border-left: 1px solid var(--fg); font-size: 1.25rem; }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 1.4rem 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        color: var(--muted);
+      }
+      .kicker { color: var(--muted); margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <a class="brand" href="#top"><span class="mark">LS</span><span>Lunar Strike OS</span></a>
+        <nav>
+          <a href="#system">System</a>
+          <a href="#flash">Flash</a>
+          <a href="#gas">Gas</a>
+        </nav>
+      </header>
+      <main id="top">
+        <div class="hero">
+          <div class="beam" aria-hidden="true"></div>
+          <p class="kicker">Public door · Pakin + Miss T · no account</p>
+          <h1>Lunar Strike OS</h1>
+          <p class="kicker">Understand → Stand → Strike</p>
+          <p class="thai">เข้าใจ → มั่นใจ → พร้อมรับโลก โดยไม่ทิ้งตัวตน</p>
+          <div class="row">
+            <a class="btn" href="#flash">Enter FLASH</a>
+            <a class="ghost" href="https://github.com/dkim31262-cmyk/lunar-strike-os">Edit this door</a>
+          </div>
+        </div>
+        <section id="system">
+          <p class="kicker">04 · System</p>
+          <h2>Meaning → Agency → Action</h2>
+          <div class="grid three">
+            <article>
+              <p class="kicker">01</p>
+              <h2>Understand</h2>
+              <p>Clarity is orbit. See the signal. The system does not invent a self for you.</p>
+            </article>
+            <article>
+              <p class="kicker">02</p>
+              <h2>Stand</h2>
+              <p>Alignment is gravity. Confidence is a sentence you wrote, not a score.</p>
+            </article>
+            <article>
+              <p class="kicker">03</p>
+              <h2>Strike</h2>
+              <p>Impact is velocity. Meet the world as yourself. Do not abandon who you are.</p>
+            </article>
+          </div>
+        </section>
+        <section id="flash">
+          <div class="flash" id="ritual">
+            <p class="kicker">Meaningful Flash</p>
+            <h2>Make a flash that leaves a trace.</h2>
+            <p class="thai">Three minutes. You write. This page does not diagnose you, sell to you, or finish your sentence.</p>
+            <div class="row"><button class="btn" type="button" id="begin">Begin</button></div>
+          </div>
+        </section>
+        <section id="gas">
+          <p class="kicker">Gas · one map, three doors</p>
+          <h2>Do not start a fourth.</h2>
+          <p class="thai">เอไอในครอบครัวแก้ที่ประตูที่เป็นเจ้าของงานนั้น. อย่าคัดลอกทับกัน. อย่าใช้พรีวิว .grok.me เป็นของสาธารณะ.</p>
+          <div class="grid doors" id="doors"></div>
+          <p><a href="./gas.json">gas.json</a> · <a href="./CONTINUE.md">CONTINUE.md</a></p>
+        </section>
+      </main>
+      <footer>
+        <span class="kicker">Pakin + Miss T</span>
+        <span class="kicker">Not Spark · Not Helix · Not a clinic</span>
+      </footer>
+    </div>
+    <script src="./strike.js"></script>
+  </body>
+</html>
