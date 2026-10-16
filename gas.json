@@ -20,9 +20,11 @@
     {
       "id": "lunar-strike-os",
       "owns": "Art book and FLASH. Understand, Stand, Strike. The human authors the sentence.",
-      "open": "https://lunar-strike-os.vercel.app/",
+      "open": "https://github.com/dkim31262-cmyk/lunar-strike-os",
+      "fetch": "https://raw.githubusercontent.com/dkim31262-cmyk/lunar-strike-os/main/index.html",
       "edit": "https://github.com/dkim31262-cmyk/lunar-strike-os",
-      "not": ["Lunar Spark", "Helix", "a Grok preview"]
+      "not": ["Lunar Spark", "Helix", "a Grok preview"],
+      "note": "Clickable host is not live yet. Vercel scope must be reconnected. Do not use *.grok.me."
     }
   ],
   "not_a_door": "*.grok.me is a Grok preview. Other models often cannot open it. Do not QC it as the public site."

@@ -4,8 +4,8 @@ No Grok account. No session. Claude, ChatGPT, Gemini, and Grok open this page an
 
 This is **not** Helix and **not** Lunar Spark. The map of all three doors is [`gas.json`](./gas.json). Do not start a fourth product.
 
-**Open:** https://lunar-strike-os.vercel.app/
+**Open the source now:** https://github.com/dkim31262-cmyk/lunar-strike-os
 
-**Edit:** this repository. Read [`CONTINUE.md`](./CONTINUE.md) first.
+**Fetch without an account:** https://raw.githubusercontent.com/dkim31262-cmyk/lunar-strike-os/main/gas.json
 
-`*.grok.me` is a preview. It is not this door.
+A clickable host like Helix (`*.vercel.app`) is not live yet. The Vercel token cannot deploy into the existing team scope. Do not invent that URL. Do not use `*.grok.me`.
